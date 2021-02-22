@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+         th, td{
+            border: solid ;
+        }
+
+        table{
+            border: 7px solid gray;
+            /* border-color: black; */
+            background-color: rgb(236, 235, 235);
+            border-bottom-color: black;
+            border-right-color: black;
+        }
+        #tophead{
+            border-color:  gray; 
+             border-top-color: black; 
+             border-left-color: black; 
+             border-width: 2px; 
+        }
+        #mon{
+            border-color:gray;
+             border-top-color: black;
+             border-left-color: black;
+              border-width: 2px; 
+              border-top-width: 3px;
+               border-bottom-width: 3px;
+        }
+        #tue{
+            border-color:  gray; 
+             border-top-color: black;
+              border-left-color: black;
+               border-width: 2px;
+               border-bottom-width: 3px;
+        }
+        #wed{
+            border-color:gray;
+             border-top-color: black;
+             border-left-color: black;
+              border-width: 2px;
+               border-top-width: 3px;
+
+        }
+        #thu{
+            border-color:gray;
+             border-top-color: black; 
+             border-left-color: black;
+             border-width: 2px; 
+             border-top-width: 3px;
+               border-bottom-width: 3px;
+        }
+        #fri{
+            border-color:  gray; 
+             border-top-color: black;
+            border-left-color: black;
+             border-width: 2px;
+             border-bottom-width: 3px;
+        }
+        #sat{
+            border-color:gray;
+             border-top-color: black; 
+             border-left-color: black;
+             border-width: 2px;
+              border-top-width: 3px; 
+               
+        }
+        #bottomrow{
+            border-color:  gray; 
+             border-top-color: black;
+            border-left-color: black;
+             border-width: 2px;
+             border-bottom-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Time Table</h1>
+    <table   cellspacing="10" cellpadding="10" >
+      <thead >
+          <tr >
+              <th colspan="2" id="tophead">
+                  Days / Periods
+              </th>
+              <th colspan="1" id="tophead">
+                1
+            </th>
+            <th colspan="1" id="tophead">
+                2
+            </th>
+            <th colspan="1" id="tophead">
+                3
+            </th>
+            <th colspan="1" id="tophead" >
+                 &nbsp;
+            </th>
+            <th colspan="1" id="tophead">
+                4
+            </th>
+            <th colspan="1" id="tophead">
+                5
+            </th>
+            <th colspan="1" id="tophead">
+                6
+            </th>
+          </tr>
+          <tr >
+              <td colspan="2" id="mon" style="text-align: left;" >Mon</td>
+              <td id="mon">Science</td>
+              <td id="mon">English</td>
+              <td id="mon">Hindi</td>
+              <td rowspan="6" id="mon" style="border-bottom-width: 2px;" >B<br>R<br>E<br>A<br>K</td>
+              <td id="mon">Maths</td>
+              <td id="mon">Games</td>
+              <td id="mon">Moral Science</td>
+          </tr>
+          <tr>
+            <td colspan="2"  id="tue" style="text-align: left;" >Tue</td>
+            <td  id="tue">Science</td>
+            <td   id="tue">English</td>
+            <td   id="tue">Hindi</td>
+            <td   id="tue">Maths</td>
+            <td   id="tue">Games</td>
+            <td   id="tue">Moral Science</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="wed" style="text-align: left;" >Wed</td>
+            <td  id="wed">Science</td>
+            <td  id="wed">English</td>
+            <td rowspan="3"  id="wed"  style="border-bottom-width: 3px;">Hindi</td>
+            <td  id="wed"  >Maths</td>
+            <td  id="wed">Games</td>
+            <td  id="wed">Moral Science</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="thu" style="text-align: left;" >Thu</td>
+            <td id="thu">Science</td>
+            <td id="thu">English</td>
+            <td id="thu">Maths</td>
+            <td id="thu">Games</td>
+            <td id="thu">Moral Science</td>
+        </tr>
+        <tr>
+            <td colspan="2" id= "fri" style="text-align: left;" >Fri</td>
+            <td id= "fri">Science</td>
+            <td id= "fri"> English</td>
+            <td id= "fri">Maths</td>
+            <td id= "fri">Games</td>
+            <td id= "fri">Moral Science</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="sat" style="text-align: left;" >Sat</td>
+            <td id="sat">Science</td>
+            <td id="sat">English</td>
+            <td id="sat">Hindi</td>
+            <td colspan="3" id="sat">Maths</td>
+        </tr>
+        <tr>
+            <th colspan="9" id="bottomrow">This is Class VIII </th>
+        </tr>
+      </thead>   
+    </table>
+
+</body>
+</html>
