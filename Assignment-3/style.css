@@ -4,8 +4,10 @@
 }
 body{
     background-color: black;
-    border: 2px solid yellow;
-    box-shadow: 2px 4px 2px  greenyellow;
+    border: 3px solid yellow;
+    box-shadow: 0px 3px 6px  greenyellow;
+    margin: 0;
+    padding: 0;
 }
 body:hover{
     background-color: black;
@@ -23,8 +25,7 @@ button{
     background-color: black;
     color: orange;
     font-size: 1.4rem;
-    transition: all ease-in;
-    /* box-shadow: 0px 2px 3px rgba(104, 104, 104); */
+
 
 }
 button:hover{
@@ -36,5 +37,5 @@ button:hover{
     font-size: 1.4rem;
     box-shadow: 0px 8px 10px rgb(93, 168, 43);
     cursor: pointer;
-    top: -5px;
+    top: -4px;
 }
