@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: seashell;
+}
+div{
+    background-color:goldenrod;
+    height: 8pc;
+}
+div h1{
+    padding: 20px;
+    color: honeydew;
+    text-align: center;
+}
+section{
+     width: 360px;
+     border: 8px solid orange;
+     margin: 50px auto;
+     padding: 5px;
+     box-shadow:gold 2px 2px 8px;
+}
+#inp{
+    width: 275px;
+    height: 40px;
+    border:yellow 4px solid;
+    padding: 4px;
+    margin: 5px;
+    box-shadow:gold 1px 1px 6px;
+}
+#addTodo{
+    background-color: white;   
+    border: none;
+    height: 25px;
+    width: 40px;
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left:5px;
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px gold solid;
+    height: 30px;
+    background-color: white;
+    box-shadow: goldenrod 2px 2px 8px;
+}
+li button{
+    text-align: right;
+}
+span{
+    padding-right: 20px;
+}
+.done-task{
+    text-decoration: line-through ;
+    text-transform: capitalize;
+}
