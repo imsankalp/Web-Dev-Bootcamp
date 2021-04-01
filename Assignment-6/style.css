@@ -43,7 +43,8 @@ li{
     margin-right: 5px;
     padding: 5px;
     border: 2px gold solid;
-    height: 30px;
+    box-sizing: content-box;
+    word-wrap:break-word;
     background-color: white;
     box-shadow: goldenrod 2px 2px 8px;
 }
