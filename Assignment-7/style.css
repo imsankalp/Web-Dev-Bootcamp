@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("http://survivecreative.com/wp-content/uploads/2016/06/Minimalism-sky-clouds-sun-mountains-lake-landscape-wallpapers-1920x1080.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+
+}
+header{
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    height: 10vh;
+    width: 100vw;
+}
+header h1{
+    margin: 0.5% auto;
+    color:yellow;
+    text-align: center;
+}
+.inputArea{
+    margin: 4% 40%;
+    color:snow;
+    text-shadow:2px 2px black;
+}
+#inputText{
+    width: 18rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: seashell;
+    outline: none;
+    border: 2px solid yellow;
+    border-radius:5%;
+    box-shadow: black 2px 8px 12px ;
+}
+
+h2, h3{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
