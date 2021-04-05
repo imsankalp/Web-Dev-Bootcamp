@@ -8,6 +8,7 @@ const dateShow = document.createElement('H2');
 const placeShow = document.createElement('H2');
 const message = document.createElement('H2');
 const timeShow = document.createElement('H2');
+const iconShow = document.createElement('img');
 
 inputData.addEventListener('keypress', (e) => {
     if(e.key == 'Enter'){
@@ -64,34 +65,37 @@ function showWeather(fetchedData){
    
     let times = new Date();
     
+    // Weather Icon Fetching:
+    const iconCode = fetchedData.data.weather[0].icon;
+    const iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+    iconShow.src = iconUrl;
+    iconShow.setAttribute('id','icons');
     
     const place = fetchedData.data.name;
 
     tempShow.innerText = temperature;
-    tempShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
-    tempShow.style.fontSize = "3.2rem";
+    tempShow.setAttribute("id", "temp");
+  
     document.body.append(tempShow);
 
     weatherDescriptionShow.innerText = weatherDescription;
-    weatherDescriptionShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
+    weatherDescriptionShow.setAttribute("class","show");
+    weatherDescriptionShow.append(iconShow);
     document.body.append(weatherDescriptionShow);
 
     tempMinMaxShow.innerText = tempMinMax;
-    tempMinMaxShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
+    tempMinMaxShow.setAttribute('class','show');
     document.body.append(tempMinMaxShow);
 
     dateShow.innerHTML = times.toDateString();
-    dateShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
-    dateShow.style.fontSize = "1.2em";
+    dateShow.setAttribute('class', 'bottomShow');
     document.body.append(dateShow);
     timeShow.innerHTML = times.toLocaleTimeString();
-    timeShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
-    timeShow.style.fontSize = "1.2em";
+    timeShow.setAttribute('class','bottomShow');
     document.body.append(timeShow);
 
     placeShow.innerText = place;
-    placeShow.style.textShadow = "2px 4px 4px black,1px 1px 1px black";
-    placeShow.style.fontSize = "1.2em";
+    placeShow.setAttribute('class','bottomShow');
     document.body.append(placeShow);
 
     inputData.value = "";

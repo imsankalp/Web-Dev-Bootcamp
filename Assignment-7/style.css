@@ -37,10 +37,32 @@ header h1{
     box-shadow: black 2px 8px 12px ;
 }
 
-h2, h3{
+
+
+#temp{
     text-align: center;
     color: whitesmoke;
     font-size: 1.8rem;
     padding-bottom: 10px;
+    text-shadow: 2px 4px 4px black,1px 1px 1px black;
+    font-size: 3.2rem;
 }
-
+#icons{
+    transform: translateY(16px);
+    margin-left: 5px;
+}
+.show{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    text-shadow: 2px 4px 4px black,1px 1px 1px black;
+}
+.bottomShow{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    text-shadow: 2px 4px 4px black,1px 1px 1px black;
+    font-size: 1.2em;
+}
